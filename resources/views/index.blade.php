@@ -2,459 +2,431 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Selamat datang di berijalan</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <title>adiFerdian</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="{{ URL::asset('/assets/img/logo tab.png') }}" rel="icon" />
-    <link href="{{ URL::asset('/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
+  <!-- Favicons -->
+  <link href="{{ URL::asset('/assets/img/Af.png') }}" rel="icon">
+  <link href="{{ URL::asset('/assets/img/Af.png') }}" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="{{ URL::asset('/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{{ URL::asset('/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="{{ URL::asset('/assets/css/style.css') }}" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: OnePage - v4.7.0
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Template Main CSS File -->
+  <link href="{{ URL::asset('/assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center justify-content-between">
 
-            <!-- <h1 class="logo"><a href="index.html">OnePage</a></h1> -->
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.php" class="logo"><img src="{{ URL::asset('/assets/img/logo.png') }}" alt="" class="img-fluid"></a>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Produk & Layanan</a></li>
-                    <li><a class="nav-link scrollto" href="#clients">Klien Kami</a></li>
-                    <li><a class="nav-link scrollto o" href="#galery">Galeri Foto</a></li>
-                    <li><a class="getstarted scrollto" href="contact" style="font-weight: 600;">Hubungi Kami</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-        </div>
-        {{-- <?php if (session()->getFlashdata('sukses')) { ?>
-            <div class="alert alert-success" style="text-align: center;">
-                <strong>Success!</strong> <?= session()->getFlashdata('sukses') ?>
-            </div>
-        <?php } ?> --}}
-    </header><!-- End Header -->
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
 
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
 
-    <!-- ======= Hero Section ======= -->
+  </header><!-- End Header -->
 
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-9 text-center">
-                    <h1>Kami memberikan solusi dan membantu bisnis Anda untuk mencapai keunggulan</h1>
-                    <h2><b>berijalan</b> fokus untuk menjadi partner terbaik Anda dalam mengelola resiko, meningkatkan efisiensi, dan menjaga keberhasilan bisnis.</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Hero -->
-
-    <main id="main">
-
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about" style="padding-bottom: 100px;">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2 class="text-capitalize">Tentang Kami</h2>
-                    <h5><b>berijalan</b> hadir untuk memudahkan dan menyempurnakan setiap proses bisnis melalui layanan <span class="font-italic-style">Operations Center, Telephony Center dan Techno Center</span>.
-                        <b>berijalan</b> siap memberikan pelayanan dan solusi berbasis digital dengan mutu terbaik yang dapat dikustomisasi sesuai kebutuhan di masa depan.
-                    </h5>
-                </div>
-
-                <div class="row content container">
-                    <div class="col-lg-10">
-                        <div>
-                            <h5>
-                                Visi:
-                            </h5>
-                            <p style="text-align: justify;">
-                                Menjadi perusahaan transformasi dan layanan digital global yang kompetitif.
-                            </p>
-                        </div>
-                        <div style="padding-top: 30px;">
-                            <h5>
-                                Misi:
-                            </h5>
-                            <p style="text-align: justify;">
-                                Membantu pelanggan menjalankan bisnis dengan efisien melalui solusi dan layanan teknologi yang kuat <br> dengan memberdayakan sumber daya lokal.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 pt-3 pt-lg-0">
-                        <h5>
-                            Values:
-                        </h5>
-                        <p>
-                        <ul class="font-italic-style">
-                            <li><i class="ri-check-double-line"></i>Integrity</li>
-                            <li><i class="ri-check-double-line"></i>Teamwork</li>
-                            <li><i class="ri-check-double-line"></i>Quality</li>
-                            <li><i class="ri-check-double-line"></i>Customer Satisfaction</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End About Section -->
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services section-bg" style="padding-bottom: 200px;">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2 class="text-capitalize">Produk & Layanan</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-box iconbox-green">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                                </svg>
-                                <i class='bx bx-bar-chart-alt-2'></i>
-                            </div>
-                            <h4 style="font-style: italic;">Operations Center</h4>
-                            <div style="text-align: left;">
-                                <p>
-                                <h5>Tipe Layanan:</h5>
-                                <ul>
-                                    <li>Layanan <span class="font-italic-style">Data Entry</span></li>
-                                    <li>Layanan <span class="font-italic-style">Tele-Survey</span></li>
-                                    <li>Layanan Analisis Kredit</li>
-                                    <li style="visibility: hidden;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="icon-box iconbox-green ">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                                </svg>
-                                <i class='bx bxs-phone-call'></i>
-                            </div>
-                            <h4 style="font-style: italic;">Telephony Center</h4>
-                            <div style="text-align: left;">
-                                <p>
-                                <h5>Tipe Layanan:</h5>
-                                <ul>
-                                    <li>Layanan <span class="font-italic-style">Telemarketing</span></li>
-                                    <li>Layanan <span class="font-italic-style"> Tele-Verification</span></li>
-                                    <li>Layanan <span class="font-italic-style"> Desk Collection</span></li>
-                                    <li style="visibility: hidden;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="icon-box iconbox-green">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                                </svg>
-                                <i class='bx bxs-business'></i>
-                            </div>
-                            <h4 style="font-style: italic;">Techno Center</h4>
-                            <div style="text-align: left;">
-                                <p style="text-align: left;">
-                                <h5>Tipe Layanan:</h5>
-                                <ul>
-                                    <li>Techno <span class="font-italic-style">Web Development</span></li>
-                                    <li>Techno <span class="font-italic-style">Digital Product Solution</span></li>
-                                    <li>Techno <span class="font-italic-style">Quality Control</span></li>
-                                    <li>Techno <span class="font-italic-style">Software Engineering</span></li>
-                                    <li>Techno <span class="font-italic-style">System Analyst</span></li>
-                                    <li style="visibility: hidden;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Sevices Section -->
-
-        <!-- ======= Cta Section ======= -->
-        <section id="cta" class="cta">
-            <div class="container" data-aos="zoom-in">
-                <div class="text-center">
-                    <h3 style="font-weight: 900; font-size: 35px;">Kenapa Memilih Kami?</h3>
-                </div>
-                <div class="row icon-boxes text-center" style="padding-top: 40px;">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="icon-box">
-                            <h4 class="title"><a href="" style="color: white; font-size: 25px; font-weight: 600; font-style: italic;">Knowledge</a></h4>
-                            <p class="description">Berpengalaman dalam mengelola pelanggan di bidang keuangan dan <span class="font-italic-style">leasing</span></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="icon-box">
-                            <h4 class="title font-italic-style"><a href="" style="color: white; font-size: 25px; font-weight: 600;">Process</a></h4>
-                            <p class="description">Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="icon-box">
-                            <h4 class="title"><a href="" style="color: white; font-size: 25px; font-weight: 600; font-style: italic">System & Technology</a></h4>
-                            <p class="description">Menghadirkan sistem dan teknologi untuk mengakomodasi <span style="font-style: italic;"> customer journey</span> yang holistik</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
-                        <div class="icon-box">
-                            <h4 class="title"><a href="" style="color: white; font-size: 25px; font-weight: 600; font-style: italic">People</a></h4>
-                            <p class="description">Tim yang unggul dengan budaya yang baik untuk memberikan layanan terbaik bagi kepuasan pelanggan</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section><!-- End Cta Section -->
-
-        <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients section-bg" style="padding-top: 150px; padding-bottom: 150px;">
-            <div class="container">
-                <div class="text-center">
-                    <h3 style="color: #6ed34b; font-size: 35px; font-weight: 900;">Klien Kami</h3>
-                </div>
-                <div class="row">
-                    <!--<div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">-->
-                    <!--    <img src="{{ URL::asset('/assets/img/clients/client-1.png') }}" class="img-fluid" alt="">-->
-                    <!--</div>-->
-
-                    <!--<div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">-->
-                    <!--    <img src="{{ URL::asset('/assets/img/clients/client-2.png') }}" class="img-fluid" alt="">-->
-                    <!--</div>-->
-
-                    <div class="col-lg-6 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-                        <img style="max-width: 200px;" src="{{ URL::asset('/assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-                        <img style="max-width: 200px;" src="{{ URL::asset('/assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <!-- <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="{{ URL::asset('/assets/img/clients/client-5.png') }}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
-            <img src="{{ URL::asset('/assets/img/clients/client-6.png') }}" class="img-fluid" alt="">
-          </div> -->
-
-                </div>
-
-            </div>
-        </section><!-- End Clients Section -->
-
-        <!-- ======= Portfolio Section ======= -->
-        <section id="galery" class="portfolio">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2 class="text-capitalize">Galeri Foto</h2>
-                </div>
-
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button> -->
-                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button> -->
-                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 15"></button> -->
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image: url('{{ URL::asset('/assets/img/portfolio/portfolio-1.jpg') }}">
-                            <div class="carousel-caption">
-                                <h5>Gedung Tampak Depan</h5>
-                                <p>Desain gedung menggunakan motif batik Parang yang mencerminkan budaya khas Yogyakarta</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url('{{ URL::asset('/assets/img/portfolio/portfolio-2.jpg') }}">
-                            <div class="carousel-caption">
-                                <h5>Peresmian Gedung</h5>
-                                <p>Peresmian gedung berijalan bersama dengan Gubernur DI Yogyakarta Sri Sultan Hamengku Buwono X, Wakil Bupati Sleman Danang Maharsa, SE, Director in Charge Astra Financial & Logistic Suparno Djasmin, Presiden Direktur Astra Credit Companies Siswadi serta segenap Board of Director ACC lainnya</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url('{{ URL::asset('/assets/img/portfolio/portfolio-3.jpg') }}">
-                            <div class="carousel-caption">
-                                <h5 class="font-italic-style">Milestone </h5>
-                                <p>Perjalanan dan pencapaian ACC yang menjadi filosofi utama dibentuknya berijalan</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url('{{ URL::asset('/assets/img/portfolio/portfolio-4.jpg') }}">
-                            <div class="carousel-caption">
-                                <h5 class="font-italic-style">Workspace Room</h5>
-                                <p>Ruang kerja untuk mendukung kinerja talenta berijalan</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url('{{ URL::asset('/assets/img/portfolio/portfolio-5.jpg') }}">
-                            <div class="carousel-caption">
-                                <h5 class="font-italic-style">Breakout Room</h5>
-                                <p>Ruangan yang difungsikan untuk talenta berijalan bersantai sejenak dan bertukar pikiran</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url('{{ URL::asset('/assets/img/portfolio/portfolio-6.JPG') }}">
-                            <div class="carousel-caption">
-                                <h5>CSR</h5>
-                                <p>berijalan mengadakan program vaksinasi booster Covid-19 untuk masyarakat Yogyakarta</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url({{ URL::asset('/assets/img/portfolio/portfolio-7.jpg') }}">
-                            <div class="carousel-caption">
-                                <h5>UNPAR</h5>
-                                <p>Kunjungan dari Universitas Parahyangan (UNPAR) ke berijalan</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section><!-- End Portfolio Section -->
-
-    </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 footer-contact">
-                        <h3 style="color: #2487ce;">Hubungi Kami</h3>
-                        <div style="display: flex;">
-                            <div class="col-lg-6 strech" style="display: flex;">
-                                <p>
-                                    <strong class="font-italic-style">Call Center</strong><br>
-                                    <strong>Senin - Jum'at</strong> <br>
-                                    08.00 - 16.00 <br>
-                                    <strong>Sabtu</strong> <br>
-                                    08.00 - 13.00 <br>
-                                    <strong>0274 5029009</strong>
-                                </p>
-                            </div>
-                            <div class="col-lg-6 sp" style="display: grid;">
-                                <div style="font-size: 13px; padding: 25px 0 10px 0;">
-                                    Tertarik dengan produk dan layanan kami?
-                                    Hubungi kami untuk konsultasi keperluan <br> bisnis Anda.
-                                </div>
-                                <div>
-                                    <a href="contact" class="cont btn scrollto" style="font-weight: 700;">Kontak Kami >></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <h3 style="font-weight: 300; color: #2487ce;">Lokasi berijalan</h3>
-                        <div style="display: flex;">
-                            <div class="col-lg-6 col-md-6 footer-links">
-                                <h4 style="font-weight: 400;">Mrican <span class="font-italic-style">(Operations Center & Telephony Center)</span></h4>
-                                <p>
-                                    Jl. Pringgodani No.1A, Mrican, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
-                                </p>
-                            </div>
-                            <div class="col-lg-6 col-md-6 footer-links sp">
-                                <h4 style="font-weight: 400;">Petung <span class="font-italic-style">(Techno Center)</span></h4>
-                                <p>
-                                    Jl. Petung No.3, Papringan, Caturtunggal, Kec. Depok,<br> Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    <div class="container d-md-flex py-4">
-      <div class="me-md-auto text-center text-md-start">
-        <div class="credits">
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Adi Ferdian</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Software Developer, Freelancer"></span></p>
+      <div class="social-links">
+        <a href="mailto:adiferdian7@gmail.com" target="_blank" class="facebook"><i class="bx bxl-gmail"></i></a>
+        <a href="https://www.instagram.com/adiferdians/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/adi-ferdian-0845a71a7/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
-    </footer>
-    <!-- End Footer -->
+  </section><!-- End Hero -->
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <main id="main">
 
-    <!-- Vendor JS Files -->
-    <script src="{{ URL::asset('/assets/vendor/purecounter/purecounter.js') }}"></script>
-    <script src="{{ URL::asset('/assets/vendor/aos/aos.js') }}"></script>
-    <script src="{{ URL::asset('/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ URL::asset('/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ URL::asset('/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ URL::asset('/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ URL::asset('/assets/vendor/php-email-form/validate.js') }}"></script>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
 
-    <!-- Template Main JS File -->
-    <script src="{{ URL::asset('/assets/js/main.js') }}"></script>
+        <div class="section-title">
+          <h2>About</h2>
+          <p style="text-align: justify;">I am a front-end web application developer with two years experience of this field who is also 
+            experiencing Laravel Developer followed by demonstrated history of working in the financial services industry. 
+            To be a programmer has been being my dream since I was in 2nd grade of junior high school, so that I really enjoy my proffession now. 
+            Not only programming, but I also learned about design since I was in high school. My admiration of visual design has brought me to learn self-taught about it from some web sites.
+            I am also an active member in some organizations, especially in social field.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="{{ URL::asset('/assets/img/profile-img.jpg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Web Developer &amp; Designer.</h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>02 Agustus 1996</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Yogyakarta, Indonesia.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>adiferdian7@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Hobby:</strong> <span>Traveling, Gamming, Culinary, Cycling and Manymore.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Adi Ferdian</h4>
+              <p><em>Laravel Website Developer with 2+ years of experience developing user-centered aplications from initial concept to final, polished deliverable &amp; also an freelance designer.</em></p>
+              <ul>
+                <li>Yogyakarta, indonesia</li>
+                <li>adiferdian7@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Computer Sience</h4>
+              <h5>2014 - 2020</h5>
+              <p><em>Universitas Teknologi Yogyakarta</em></p>
+              <p><em>Bachelor of Computer Sience, GPA 3,43</em></p>
+              <p>I continued my education at the Yogyakarta University of Technology with the Computer Science study program.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Xsis Academy</h4>
+              <h5>2020 - 2020</h5>
+              <p><em>Fullstack PHP developer</em></p>
+              <p style="text-align: justify;">I followed the bootcamp program from XSIS Academy with full stack php developer learning materials. learn how to build applications from scratch using php framework (Laravel).</p>
+            </div>
+            <div class="resume-item">
+              <h4>WABI Teknologi Indonesia</h4>
+              <h5>2019 - 2019</h5>
+              <p><em>Building Web Aplication Using PHP/Laravel</em></p>
+              <p style="text-align: justify;">Before joining the bootcamp program from XSIS, I attended a workshop program from WABI Teknologi Indonesia with the material on Building Web Application Using PHP/Laravel.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Laravel Developer at Astra Credit Companies (ACC)</h4>
+              <h5>2020 - Present</h5>
+              <p><em>Yogyakarta, indonesia</em></p>
+              <ul>
+                <li>work with professionals who are experienced in the field of programming for years.</li>
+                <li>cooperate in building commercial applications with team.</li>
+                <li>learn to maintain and manage applications that have gone public.</li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Social Activities</h3>
+            <div class="resume-item">
+              <h4>Kanal Muda</h4>
+              <h5>2020 - Present</h5>
+              <p><em>Yogyakarta, indonesia</em></p>
+              <p style="text-align: justify;">
+                Kanal Muda initiated as a forum for the unity of various youth groups for social solidarity. There are various forms. 
+                One of them is solidarity with food packages, masks, and various other things needed by people who are very affected by the COVID-19 pandemic.
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Paguyuban Pengajar Pinggir Sungai (P3S)</h4>
+              <h5>2016 - Present</h5>
+              <p><em>Yogyakarta, indonesia</em></p>
+              <p>
+                Volunteers engaged in people-based education.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Projects that I've worked on. Included with non-commercial projects</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Design</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-1.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Content Management System(CMS) For accone.co.id i work on some menu in the CMS">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Content Management System(CMS) For accone.co.id</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-2.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Content Management System(CMS) For accpartner, i work on some menu in the CMS">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Content Management System(CMS) For accpartner</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-3.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Berijalan Landing page phase 1">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Berijalan Landing page</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-4.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Landing Page contain Information about career in astra group, include Conten Management System(CMS)">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Astra Financial/Career</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-5.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Product when i complete my thesis in colage with the title of the thesis 'Sistem Pendukung Keputusan Pembelian Smartphone Dengan Metode AHP (ANALYTICAL HIERARCHY PROCESS)'">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>My Thesis Product</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-6.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="the product i worked on when i was just learning laravel">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>My first laravel product.</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-7.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="encyclopedia containing biology laboratory equipment">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Ensiklopedia</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <a href="{{ URL::asset('/assets/img/portfolio/portfolio-8.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Newsletter 'Jagat Tani' volume 3">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Newsletter</h4>
+                  <div class="portfolio-links">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>I use technology in working on those projects inckuding photo editing because not only a designer, but  i am also an editor.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue" style="width: 100%;">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxs-data"></i>
+              </div>
+              <h4><a href="">MySQL</a></h4>
+              <!-- <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange" style="width: 100%;">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">PHP Framework (Laravel)</a></h4>
+              <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-yellow" style="width: 100%;">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bxl-javascript"></i>
+              </div>
+              <h4><a href="">Javascript</a></h4>
+              <!-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-teal" style="width: 100%;">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="bx bx-globe"></i>
+              </div>
+              <h4><a href="">Responsive Web Design</a></h4>
+              <!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-pink" style="width: 100%;">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bx bxs-file-doc"></i>
+              </div>
+              <h4><a href="">Adobe InDesign</a></h4>
+              <!-- <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-blue" style="width: 100%;">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bx bx-layer"></i>
+              </div>
+              <h4><a href="">Adobe Photoshop</a></h4>
+              <!-- <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <!-- <h3>Adi Ferdian</h3> -->
+      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
+      <div class="social-links">
+        <a href="mailto:adiferdian7@gmail.com" target="_blank" class="facebook"><i class="bx bxl-gmail"></i></a>
+        <a href="https://www.instagram.com/adiferdians/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/adi-ferdian-0845a71a7/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ URL::asset('/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/typed.js/typed.min.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ URL::asset('/assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ URL::asset('/assets/js/main.js') }}"></script>
 
 </body>
 
