@@ -5,7 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class resume extends Model
+class Resume extends Model
 {
     use HasFactory;
+
+    protected $table = 'resumes';
+    protected $fillable = [
+        'category',
+        'title',
+        'desc',
+        'learn',
+        'year_in',
+        'year_out',
+        'place'
+
+    ];
+
+    protected $hidden = [];
 }

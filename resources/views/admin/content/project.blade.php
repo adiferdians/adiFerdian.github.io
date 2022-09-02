@@ -3,137 +3,65 @@
 @section('title_content', 'Project')
 @section('project', 'active')
 
-
+{{-- {{ dd($r_data) }} --}}
 <div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            <h4 class="card-title"> Simple Table</h4>
-          </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table">
-                <thead class=" text-primary">
-                  <th>
-                    Name
-                  </th>
-                  <th>
-                    Country
-                  </th>
-                  <th>
-                    City
-                  </th>
-                  <th class="text-right">
-                    Salary
-                  </th>
-                </thead>
-                <tbody>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card ">
+        <div class="card-header ">
+          <h5 class="card-title">Project</h5>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+                <th>
+                  Id
+                </th>
+                <th>
+                  Title
+                </th>
+                <th>
+                  Descriptions
+                </th>
+                <th>
+                  Image
+                </th>
+                <th>
+                  Category
+                </th>
+              </thead>
+              <tbody>
+                @foreach ($r_data as $project)
                   <tr>
                     <td>
-                      Dakota Rice
+                      {{ $project['id'] }}
                     </td>
                     <td>
-                      Niger
+                      {{ $project['title'] }}
+                    </td>
+                    <td style="max-width: 400px">
+                      {{ $project['desc'] }}
                     </td>
                     <td>
-                      Oud-Turnhout
+                      {{ $project['img'] }}
                     </td>
-                    <td class="text-right">
-                      $36,738
+                    <td>
+                      {{ $project['category'] }}
+                    </td>
+                    <td>
+                      <button class="btn btn-primary"><i class="nc-icon nc-settings-gear-65"></i></button>
+                      <button class="btn btn-danger"><i class="nc-icon nc-simple-remove"></i></button>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
-                      Minerva Hooper
-                    </td>
-                    <td>
-                      Curaçao
-                    </td>
-                    <td>
-                      Sinaai-Waas
-                    </td>
-                    <td class="text-right">
-                      $23,789
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Sage Rodriguez
-                    </td>
-                    <td>
-                      Netherlands
-                    </td>
-                    <td>
-                      Baileux
-                    </td>
-                    <td class="text-right">
-                      $56,142
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Philip Chaney
-                    </td>
-                    <td>
-                      Korea, South
-                    </td>
-                    <td>
-                      Overland Park
-                    </td>
-                    <td class="text-right">
-                      $38,735
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Doris Greene
-                    </td>
-                    <td>
-                      Malawi
-                    </td>
-                    <td>
-                      Feldkirchen in Kärnten
-                    </td>
-                    <td class="text-right">
-                      $63,542
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Mason Porter
-                    </td>
-                    <td>
-                      Chile
-                    </td>
-                    <td>
-                      Gloucester
-                    </td>
-                    <td class="text-right">
-                      $78,615
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Jon Porter
-                    </td>
-                    <td>
-                      Portugal
-                    </td>
-                    <td>
-                      Gloucester
-                    </td>
-                    <td class="text-right">
-                      $98,615
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                @endforeach
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </div>
 
 @endsection

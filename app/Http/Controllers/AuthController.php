@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Auth;
+use App\Models\User;
+use ReflectionClass;
+use Illuminate\Http\Request;
 
 class AuthController
 {
@@ -14,11 +16,15 @@ class AuthController
     public function auth(Request $req){
 
         // $credentials = [
-        //     'username' => $req['user'],
-        //     'password' => $req['pass'],
+        //     'username' => $req->username,
+        //     'password' => bcrypt($req->password)
         // ];
-            
-        // if (auth::attempt($credentials)) {
+        // // dd($credentials);
+
+        // $sapi = new ReflectionClass("User");
+        // $sapi = $sapi->getFileName();
+        // dd($sapi);
+        // if (User::attempt($credentials)) {
             return redirect("admin");
         // }
         // return redirect()->back()->with('massage', 'Username atau Password salah');
