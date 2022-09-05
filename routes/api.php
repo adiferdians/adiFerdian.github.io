@@ -18,6 +18,7 @@ use App\Http\Controllers\IndexController;
 
 Route::post('about/submit/{id}', [AdminController::class, 'aboutSubmit']);
 Route::post('about/sentDetil', [AdminController::class, 'detiltSubmit']);
+Route::post('about/delDetil', [AdminController::class, 'detilDelete']);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

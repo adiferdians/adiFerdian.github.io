@@ -47,6 +47,7 @@
                 </button>
             </div>
             <div class="modal-body">
+                <input type="text" id="idDetil" class="form-control" hidden>
                 <div>
                   <label for="name">Name</label>
                   <input type="text" id="name" class="form-control">
@@ -93,7 +94,6 @@
                                     </td>
                                     <td style="vertical-align: top">
                                         <button class="btn btn-primary" id="edit"><i class="nc-icon nc-settings-gear-65"></i></button>
-                                        <button class="btn btn-danger" id="delete"><i class="nc-icon nc-simple-remove"></i></button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -132,8 +132,8 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <button class="btn btn-primary" id="editDetil" onclick="editDetil({{ $aboutDetil['id'] }})"><i class="nc-icon nc-settings-gear-65"></i></button>
-                                            <button class="btn btn-danger" id="deleteDetil" onclick="deleteDetil({{ $aboutDetil['id'] }})"><i class="nc-icon nc-simple-remove"></i></button>
+                                            <button class="btn btn-primary" id="editDetil" onclick="editDetil('{{ $aboutDetil['id'] }}','{{ $aboutDetil['title'] }}','{{ $aboutDetil['desc'] }}')"><i class="nc-icon nc-settings-gear-65"></i></button>
+                                            <button class="btn btn-danger" id="deleteDetil" data-id="{{ $aboutDetil['id'] }}"><i class="nc-icon nc-simple-remove"></i></button>
                                         </div>
                                     </td>
                                 </tr>
@@ -147,127 +147,5 @@
     </div>
 </div>
 
-<script>
-
-  $(document).ready( function() {
-
-  });
-
-  // edit about
-  const edit = document.getElementById("edit");
-  edit.addEventListener('click', function() {
-    $("#myModal").modal();
-  });
-
-  // delete about
-  const del = document.getElementById("delete");
-  del.addEventListener('click', function(){
-    Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!'
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire(
-          'Deleted!',
-          'Your file has been deleted.',
-          'success'
-        )
-      }
-    })
-  });
-
-  const subAbout = document.getElementById("submitAbout");
-  subAbout.addEventListener('click', function subAbouts() {
-    const about = document.getElementById("about").value;
-    const proffession = document.getElementById("proff").value;
-    const id = document.getElementById("id").value;
-
-
-    // console.log(about, proffession);
-    axios.post('about/submit/'+id, {
-            about,
-            proffession
-        }).then((response) => {
-            Swal.fire({
-                title: 'Success...',
-                text: 'Sukses mengubah  data',
-                type: 'success',
-                confirmButtonText: 'Ok'
-            }).then((result) => {
-                if (result.value) {
-                  location.reload();
-                }
-            })
-        }).catch((error) => {
-            Swal.fire({
-                title: 'Oops...',
-                text: 'Something went wrong',
-                type: 'error',
-                confirmButtonText: 'Ok'
-            })
-        })
-  })
-
-  document.getElementById("addDetil").addEventListener('click', function addDetil() {
-    $("#myModalDetil").modal();
-  })
-
-  document.getElementById("sentDetil").addEventListener('click', function addDetil() {
-    const name = document.getElementById("name").value;
-    const desc = document.getElementById("desc").value;
-
-    axios.post('about/sentDetil', {
-            name,
-            desc
-        }).then((response) => {
-            Swal.fire({
-                title: 'Success...',
-                text: 'Sukses mengubah  data',
-                type: 'success',
-                confirmButtonText: 'Ok'
-            }).then((result) => {
-                if (result.value) {
-                  location.reload();
-                }
-            })
-        }).catch((error) => {
-            Swal.fire({
-                title: 'Oops...',
-                text: 'Something went wrong',
-                type: 'error',
-                confirmButtonText: 'Ok'
-            })
-        })
-  })
-
-  function editDetil(id) {
-    $("#myModalDetil").modal();
-  }
-
-  function deleteDetil(id) {
-      Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-          )
-        }
-      })
-  }
-</script>
-
+@include('admin.content.about.script.sAbout');
 @endsection

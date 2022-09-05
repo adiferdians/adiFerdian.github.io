@@ -72,7 +72,7 @@ class AdminController
 
         $data_about_detil = $this->about_detil_api($request);
         $data_about_detil = $data_about_detil['OUT_DATA']->toArray();
-        return view('admin.content.about', ['a_data' => $data_about, 'ad_data' => $data_about_detil]);
+        return view('admin.content.about.about', ['a_data' => $data_about, 'ad_data' => $data_about_detil]);
     }
 
     public function aboutSubmit(Request $request, $id){
@@ -110,6 +110,33 @@ class AdminController
 
         try {
             $result = $data->save();
+        } catch (QueryException $e) {
+            $errorCode = $e->errorInfo[1];
+            if($errorCode == 1062){
+                $result = 0;
+            }
+        }
+
+        if($result == 1){
+            return response()->json(array(
+                'OUT_STAT' => 'T',
+                'OUT_MESS' => 'Success'
+            ), 200);;
+        } else {
+            return response()->json(array(
+                'OUT_STAT' => 'F',
+                'OUT_MESS' => 'Failed'
+            ), 200);
+        }
+    }
+
+    public function detilDelete(Request $request){
+        $id = $request ->id;
+        $data= About_detil::find($id);
+
+        // dd($data->Proffesion);
+        try {
+            $result = $data->delete();
         } catch (QueryException $e) {
             $errorCode = $e->errorInfo[1];
             if($errorCode == 1062){
